@@ -35,3 +35,6 @@
     background: var(--color-primary) !important;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}

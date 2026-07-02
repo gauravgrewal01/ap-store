@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const Banner = () => {
   return (
-<div className='mt-5 mx-auto w-[98vw]'>
+<div className='w-full px-3'>
        <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -26,7 +26,7 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image loading="eager" src={"/banner1.png"} height={400} width={2492} alt="banner1" className='rounded-md'></Image>
+          <Image src={"/banner1.png"} height={400} width={2492} alt="banner1" className='rounded-md'></Image>
         </SwiperSlide>
         <SwiperSlide>
           <Image src={"/banner2.jpg"} height={400} width={2492} alt="banner1" className='rounded-md'></Image>

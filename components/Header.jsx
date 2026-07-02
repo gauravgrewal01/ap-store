@@ -2,10 +2,12 @@ import Link from 'next/link'
 import React from 'react'
 import Input from './ui/Input'
 import { ShoppingCart, User } from 'lucide-react'
+import Navigation from './Navigation'
 
 const Header = () => {
     return (
-        <header className='flex items-center justify-around py-3 border-b border-gray-200'>
+        <div className='headerWrapper sticky top-0 z-50 bg-white'>
+            <header className='flex items-center justify-around py-3 border-b border-gray-200'>
             <div>
                 <Link href={"/"}>
                     <h1 className='font-bold text-xl'>AP Store</h1>
@@ -24,6 +26,10 @@ const Header = () => {
                 </Link>
             </div>
         </header>
+
+        <Navigation />
+    
+        </div>
     )
 }
 
