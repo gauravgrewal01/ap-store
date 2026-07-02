@@ -3,7 +3,7 @@ import { Search } from 'lucide-react'
 
 const Input = () => {
   return (
-      <div className='bg-[#e6e6e6] w-150 rounded-md px-3 py-2 flex items-center justify-center text-sm'>
+      <div className='bg-[#e6e6e6] w-150 rounded-md px-3 py-2 flex items-center justify-center text-sm border border-gray-100  hover:border-gray-300'>
         <Search size={16}/>
         <input className='w-full outline-none px-3' placeholder='Search books' type="text" name="search" id="search" />
     </div>

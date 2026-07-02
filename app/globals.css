@@ -8,3 +8,30 @@
     --color-primary : #02B290;
     --color-secondary : #353535;
 }
+
+.swiper-button-next, .swiper-button-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 10px !important;
+    border-radius: 100%;
+    background: #e6e6e6 !important;
+}
+
+.swiper-button-next svg, .swiper-button-prev svg {
+    color: #000000 !important;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: var(--color-primary) !important;
+}
+.swiper-button-next:hover svg, .swiper-button-prev:hover svg {
+    color: #ffffff !important;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: var(--color-primary) !important;
+}
+
