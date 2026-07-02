@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AP Store 📚 
 
-## Getting Started
+A full-stack e-commerce platform built to showcase and sell books by Acharya Prashant. 
 
-First, run the development server:
+This project is engineered with a strong focus on **Server-Side Rendering (SSR)**, **Technical SEO**, and **Core Web Vitals** to deliver a lightning-fast, user-centric experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Frontend:**
+* Next.js (App Router) - For Server-Side Rendering (SSR) and optimized routing
+* React - Component-based UI architecture
+* Tailwind CSS - For responsive, utility-first styling
+* JavaScript - For robust application logic
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Backend & Database:**
+* Node.js & Express.js - RESTful API architecture
+* MongoDB - NoSQL database for managing products, users, and orders
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Payments & Integrations:**
+* Razorpay - Secure payment gateway integration (including Webhooks)
 
-## Learn More
+## ✨ Key Features (In Development)
 
-To learn more about Next.js, take a look at the following resources:
+* **Blazing Fast Load Times:** Utilizing Next.js SSR and optimized image loading (`next/image`) for superior performance.
+* **Dynamic SEO:** Implemented dynamic metadata and Open Graph (OG) tags for every individual book and video series to ensure perfect social sharing previews.
+* **Modern UI/UX:** Clean, responsive design, accessible navigation for seamless user interaction.
+* **Secure Checkout Flow:** End-to-end payment processing via Razorpay with robust server-side validation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Getting Started (Local Development)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
+### Prerequisites
+* Node.js (v18 or higher)
+* npm, yarn, or pnpm
+* MongoDB instance (Local or Atlas)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/gauravgrewal01/ap-store.git
+   cd ap-store
