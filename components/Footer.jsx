@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa'
+import { FaThreads, FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
     return (
@@ -8,13 +10,66 @@ const Footer = () => {
             <div className="upper flex justify-around">
                 <div className="social-media">
                     <h1 className='text-xl font-bold mb-2'>SOCIAL MEDIA</h1>
-                    <ul className='flex flex-col gap-2 text-white/60 '>
-                        <li>YouTube: 60.5 Million+ subscribers</li>
-                        <li>Facebook: 13.3 Million+ followers</li>
-                        <li>Instagram: 13.2 Million+ followers</li>
-                        <li>X (Twitter): 1.2 Million+ followers</li>
-                        <li>WhatsApp Channel: 575K+ followers</li>
-                        <li>Threads: 1.4 Million+ followers</li>
+                    <ul className="flex flex-col gap-2 text-white/60">
+                        <li>
+                            <Link
+                                href="https://youtube.com"
+                                target="_blank"
+                                className="flex items-center gap-2 hover:text-primary"
+                            >
+                                <FaYoutube /> YouTube: 60.5 Million+ subscribers
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                href="https://facebook.com"
+                                target="_blank"
+                                className="flex items-center gap-2 hover:text-primary"
+                            >
+                                <FaFacebook /> Facebook: 13.3 Million+ followers
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                href="https://instagram.com"
+                                target="_blank"
+                                className="flex items-center gap-2 hover:text-primary"
+                            >
+                                <FaInstagram /> Instagram: 13.2 Million+ followers
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                href="https://x.com"
+                                target="_blank"
+                                className="flex items-center gap-2 hover:text-primary"
+                            >
+                                <FaXTwitter /> X (Twitter): 1.2 Million+ followers
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                href="https://whatsapp.com/channel"
+                                target="_blank"
+                                className="flex items-center gap-2 hover:text-primary"
+                            >
+                                <FaWhatsapp /> WhatsApp Channel: 575K+ followers
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                href="https://threads.net"
+                                target="_blank"
+                                className="flex items-center gap-2 hover:text-primary"
+                            >
+                                <FaThreads /> Threads: 1.4 Million+ followers
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -34,18 +89,18 @@ const Footer = () => {
                 </div>
             </div>
 
-            <hr className='mt-10' />
+            <hr className='mt-10 text-gray-600' />
 
             <div className="copyright flex justify-center gap-20 mt-5">
                 <span className='text-sm text-gray-400'>Copyright © 2026 PrashantAdvait Foundation</span>
-                
+
                 <div className="links text-sm text-gray-400">
 
                     <Link className='hover:text-primary' href={"/"}>Terms & Conditions </Link>
-|
-                <Link className='hover:text-primary' href={"/"}>  Privacy Policy </Link>
-| 
-                 <Link className='hover:text-primary' href={"/"}> Undertaking</Link>
+                    |
+                    <Link className='hover:text-primary' href={"/"}>  Privacy Policy </Link>
+                    |
+                    <Link className='hover:text-primary' href={"/"}> Undertaking</Link>
                 </div>
             </div>
 

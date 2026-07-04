@@ -3,8 +3,8 @@ import React from 'react'
 
 const Donate = () => {
   return (
-    <div className='w-full my-15'>
-        <div className="bg-slate-950 text-white w-250 p-6 rounded-xl flex mx-auto justify-around">
+    <div className='w-full my-15 flex  justify-center'>
+        <div className="bg-slate-950 text-white w-250 p-6 rounded-xl flex justify-around">
             <div className="text">
                     <h1 className='text-2xl font-semibold'>Have you benefited from Acharya Prashant's teachings?</h1>
             <p className='text-gray-400 text-sm'>Only through your contribution will this mission move forward.</p>

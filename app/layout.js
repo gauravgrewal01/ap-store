@@ -1,5 +1,4 @@
 import { Poppins } from "next/font/google";
-import Header from "@/components/Header";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -16,8 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body cz-shortcut-listen="true">
-        <Header />
+      <body>
         {children}
         </body>
     </html>

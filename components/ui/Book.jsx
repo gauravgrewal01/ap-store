@@ -1,18 +1,19 @@
 import { ShoppingCart, Star } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Book = () => {
     return (
-        <div className='p-3 bg-gray-100 rounded-md shadow'>
+        <div className='p-3 bg-gray-100 rounded-md shadow group'>
 
-            <div className="image-container p-3">
-                <Image src={"/books/book1.jpg"} alt='book1' height={679} width={480} className='rounded-md' ></Image>
-            </div>
+            <Link href={'/product/1'} className="image-container p-3 ">
+                <Image src={"/books/book1.jpg"} alt='book1' height={679} width={480} className='rounded-md group-hover:scale-105 transition-all duration-300' ></Image>
+            </Link>
 
-            <div className="book-title mt-2">
+            <Link href={'/product/1'} className="book-title mt-2 block">
                 <span className='font-semibold text-sm'>जानदार व्यक्तित्व | Jaandaar Vyaktitva</span>
-            </div>
+            </Link>
 
             <div className='flex mt-2 items-center justify-around'>
                 <div className="rating cursor-pointer leading-2 flex justify-center flex-col">
