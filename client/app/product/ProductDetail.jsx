@@ -87,8 +87,8 @@ const ProductDetail = () => {
                     </div>
 
                    <div className="btn mt-5">
-                     <button className='rounded-md w-full mt-2 border border-[#de4c2b] py-2 px-10 text-[#de4c2b] cursor-pointer'>Add to Cart</button>
-                    <button className='rounded-md w-full mt-2 bg-[#de4c2b] py-2 px-10 text-white cursor-pointer'>Buy Now</button>
+                     <Link href={'/cart'} className='block text-center rounded-md w-full mt-2 border border-[#de4c2b] py-2 px-10 text-[#de4c2b] cursor-pointer'>Add to Cart</Link>
+                    <Link href={'/cart'} className=' block text-center rounded-md w-full mt-2 bg-[#de4c2b] py-2 px-10 text-white cursor-pointer'>Buy Now</Link>
                    </div>
 
                 </div>

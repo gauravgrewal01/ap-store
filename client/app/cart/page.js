@@ -1,19 +1,16 @@
-import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 import React from 'react'
-import Input from './ui/Input'
-import { ShoppingCart, User } from 'lucide-react'
-import Navigation from './Navigation'
+import { ArrowLeft, ShoppingCart, User } from 'lucide-react'
+import Link from 'next/link'
+import Cart from './Cart'
+import Footer from '@/components/Footer'
 
-const Header = () => {
-    return (
-        <div className='headerWrapper sticky top-0 z-50 bg-white'>
-            <header className='flex items-center justify-around py-3 border-b border-gray-200'>
-            <div>
-                <Link href={"/"}>
-                    <h1 className='font-bold text-xl'>AP Store</h1>
-                </Link>
-            </div>
-            <Input />
+const page = () => {
+  return (
+    <div>
+       <div className='border-b border-gray-200 sticky top-0  bg-white flex items-center justify-around z-50'>
+        <Link href={'/'} className='hover:bg-gray-100 p-1 rounded-full border border-gray-200'><ArrowLeft size={24} color='#242321' /></Link>
+         <Navigation />
             <div className='flex gap-8 items-center justify-center'>
                 <Link href={"/cart"} className='relative cursor-pointer hover:text-primary'>
                     <ShoppingCart />
@@ -25,12 +22,12 @@ const Header = () => {
 
                 </Link>
             </div>
-        </header>
-
-        <Navigation />
-    
-        </div>
-    )
+       </div>
+       <Cart />
+       <Footer />
+       
+    </div>
+  )
 }
 
-export default Header
+export default page
